@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Register</title>
+
+    <style>
+      
+      .register-form{
+        background-color: rgb(216, 216, 216);
+        background-image: url("Jamazon background.png");
+        
+      }
+
+      .card{
+        background-color: rgb(202, 202, 202);
+        margin-top: 15px;
+        padding-top: 30px;
+        margin-left: 450px;
+        margin-right: 450px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        box-shadow: 5px 5px rgb(60, 60, 60);
+        opacity: 90%;
+      }
+
+      .jamazon{
+        height: 150px;
+      }
+
+      .title {
+        margin-left: 10px;
+      }
+
+      .Register_page{
+        margin: 10px;
+      }
+
+      .email{
+        margin-top: 10px;
+        width: 500px;
+        margin-right: 10px;
+        font-size: small;
+      }
+      
+      .password{
+        margin-top: 10px;
+        width: 500px;
+        margin-right: 10px;
+        font-size: small;
+      }
+
+      .first_name{
+        margin-top: 10px;
+        width: 500px;
+        font-size: small;
+      }
+
+      .last_name{
+        margin-top: 10px;
+        width: 500px;
+        font-size: small;
+      }
+
+      .dob{
+        margin-top: 20px;
+        font-size: small;
+      }
+
+      .phone_number{
+        margin-top: 10px;
+        width: 500px;
+        font-size: small;
+      }
+
+      .terms_cod{
+        margin-top: 10px;
+        font-size: small;
+      }
+
+      .promo_stuff{
+        margin-top: 10px;
+        font-size: small;
+      }
+
+      .mo_money{
+        margin-top: 10px;
+        font-size: small;
+      }
+
+      .btn-primary{
+        margin-top: 10px;
+        background-color: #FF9900;
+        border-color: black;
+        color: black;
+        width: 100px;
+        height: 40px;
+        box-shadow: 2px 2px black;
+        cursor: pointer;
+        
+      }
+
+      .btn-primary:active {
+        background: #e5e5e5;
+        -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+        box-shadow: inset 0px 0px 5px #c1c1c1;
+        outline: none;
+        background-color: #FF9900;
+        color: black;
+      }
+
+      .btn-primary:hover{
+        color: black;
+        background-color: #FF9900;
+        border-color: black;
+      }
+
+      .login_button{
+        margin-top: 10px;
+        font-size: small;
+      }
+      
+    </style>
+  </head>
+
+  <body class="register-form">
+
+    <div class="card">
+    <img src="Jamazon1.png" class="jamazon">
+
+    <h1 class="title">Sign Up</h1>
+
+    <div>
+      <form class="Register_page">
+        <div class="email">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="JohnDoe@Jamazon.com  required"/>
+          <span id="passwordHelpInline" class="form-text">
+            Must contain the "@" symbol
+          </span>
+        </div>
+        <div class="password">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" minlength="8" maxlength="20" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+          <span id="passwordHelpInline" class="form-text">
+            Must be 8-20 characters long and contain 1 special character (@,&,#.?,etc.), 1 Number, and 1 Uppercase letter.
+          </span>
+        </div>
+        <div class="first_name">
+          <label for="inputAddress" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="John"
+            required
+          />
+        </div>
+        <div class="last_name">
+          <label for="inputAddress2" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Doe"
+            required
+          />
+        </div>
+
+        <div class="phone_number">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phoneNumber"
+            required
+          />
+        </div>
+
+        <div class="dob">
+          <label>
+            Enter Your Date of Birth:
+            <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}" />
+            <span class="validity"></span>
+          </label>
+        </div>
+        <div class="terms_cod">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required/>
+            <label class="form-check-label" for="gridCheck">
+               I agree to the Terms & Conditions
+            </label>
+          </div>
+          <div class="promo_stuff">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                 I consent to recieving promotional material
+              </label>
+            </div>
+            <div class="mo_money">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required/>
+                <label class="form-check-label" for="gridCheck">
+                   I allow Jamazon to sell all of my personal details*
+                </label>
+              </div>
+        </div>
+        <div class="submit_button">
+          <a href="Login.html" class="btn btn-primary" role="button" button type="submit">Register</a> 
+        </div>
+        <div class="login_button">
+          <p>Already a user of Jamazon? Great! Login <b><a href="Login.html">here!</a></b></p>
+        </div>
+      </form>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
+
+
+
+
+

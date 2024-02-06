@@ -5,8 +5,8 @@
 <html>
     <head>
         <style>
-            .card.blue {
-                background: linear-gradient(120deg, #4a4a4a, #7599fb 100%);
+            .card.grey {
+                background: linear-gradient(0deg, #b4b4b4, #f5f5f5 100%);
             }
 
             hr.clear {
@@ -36,45 +36,140 @@
                 font-family:sans-serif;
             }
 
-            .card-body{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+           
+
+            .btn-jamazon {
+                background-color:#FF9900;
+                color: #ffffff;
+            }
+
+            .card-grey{
+                background-color: #f5f5f5;
+            }
+
+            .logo {
+            width: auto !important;
+            height: 60px !important;
+            }
+    
+            .amazon-button {
+            background-color: #ff9900;
+            border: 1px solid black;
+            }
+
+            .amazon-button:hover {
+            background-color: orange;
+            border: 1px solid black;
             }
         </style>
     </head>
     <body>
-        <div class="container mx-auto">
-            <p>Navbar placeholder</p>
-            <div class="card blue mx-auto">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="logo" src="Jamazon1.png" alt="..." />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Products.html">Products</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="customerProfile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="Orders.html">Orders</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Cart.html">Cart</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search products"
+                    aria-label="Search products"
+                  />
+                  <button class="amazon-button btn" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+        <div class="container">
+            
+
+
+            <div class="card grey">
                 <hr class="clear">
-                <!--Card group-->
-                <div class="row justify-content-center row-cols-2 row-cols-md-4 g-4">
-                    <div class="col">
-                      <div class="card h-100 w-60" style="width: 320px">
-                        <div class="card-body">
-                            <div class="grid-container">
-                                <div class="box"><img src="https://img.freepik.com/free-vector/grunge-black-white-grainy-mesh-texture_1108-638.jpg?w=740&t=st=1706885566~exp=1706886166~hmac=bb952f87174dc2e70ca737f1fc9b1c2da0d92405e8688f686d43217ddcfc6776" class="card-img-top" ></div>
-                                <!-- More box-elements here -->
-                            </div>
-                        </div>
+                <!--Cards -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                  <div class="col">
+                    <div class="card ">
+                      <img src="https://th.bing.com/th/id/R.fed7afcda9154763f6d6a215a54baee6?rik=YJSFTQrPxuwsOA&riu=http%3a%2f%2foutworldgamers.com%2fwp-content%2fuploads%2f2017%2f07%2fswitch-oficial.jpg&ehk=8ueNCmmFUytxhWZgmJ6mc8xvUUjqPwkYuvMCEvOKYn8%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
-                    <!-- More columns here -->
-                 </div>
-                 <hr class="clear">
-                 <!--Carousel-->
-                 <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 70%;">
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <img src="https://img.freepik.com/free-photo/texture-cold-gray-background-copy-space-generative-ai_169016-29492.jpg?w=1060&t=st=1706889662~exp=1706890262~hmac=2a18364d711fcace25ff801b372f2ccb87925e3c6fcdce93899dddeec014af74" class="d-block w-100">
-                          </div>
-                          <!-- More carousel items here -->
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
-                      <!-- Carousel controls here -->
-                 </div>
-                 <hr class="clear">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body justify-content-center">
+                        <h5 class="card-title">Sign in for the best experience</h5>
+                        <button class="amazon-button btn" type="submit">Login</button>
+                        <p class="card-text" style="font-size: small;">Dont have a account? Go register here</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title </h5>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+                
         </div>
     </body>
 </html>
