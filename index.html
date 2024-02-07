@@ -36,6 +36,19 @@
                 font-family:sans-serif;
             }
 
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+            }
+
+            .container .image {
+              width: 50%;
+            }
+
+            .container img {
+              width: calc(100% - (2px * 2));
+              
+            }
            
 
             .btn-jamazon {
@@ -123,28 +136,41 @@
           </nav>
 
 
+          <img class= "d-flex" src="jamazon-nexus.png" style="max-width: 1500px;">
+
         <div class="container">
-            
-
-
             <div class="card grey">
                 <hr class="clear">
                 <!--Cards -->
                 <div class="row row-cols-1 row-cols-md-3 g-4 ">
                   <div class="col">
-                    <div class="card ">
-                      <img src="https://th.bing.com/th/id/R.fed7afcda9154763f6d6a215a54baee6?rik=YJSFTQrPxuwsOA&riu=http%3a%2f%2foutworldgamers.com%2fwp-content%2fuploads%2f2017%2f07%2fswitch-oficial.jpg&ehk=8ueNCmmFUytxhWZgmJ6mc8xvUUjqPwkYuvMCEvOKYn8%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+                    <div class="card" >
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Jammiest Deal of the Day</h5>
+                        <img src="jam-image.png" style="width: 370px;">
+                        <p class="card-text" >Up to 15% off</p>
+                        <p>Up to 15% off on all banana & jam products</p>
                       </div>
                     </div>
                   </div>
                   <div class="col">
-                    <div class="card">
+                    <div class="card" >
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Jamazon Essentials</h5>
+                        <div class="container">
+                          <div class="image">
+                            <img src="fish-image.png" />
+                          </div>
+                          <div class="image">
+                            <img src="senor-image.png" />
+                          </div>
+                          <div class="image">
+                            <img src="joffee-image.png" />
+                          </div>
+                          <div class="image">
+                            <img src="nexus-image.png" />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -152,6 +178,7 @@
                     <div class="card">
                       <div class="card-body align-items-center">
                         <h5 class="card-title">Sign in for the best experience</h5>
+                        <p style="font-size: 13px;">Enjoy the best Jamazon has to offer by tracking your orders, saving your basket and getting shopping reccomendations from FunkAI</p>
                         <button class="amazon-button btn" type="submit">Login</button>
                         <p class="card-text" style="font-size: small;">Dont have a account? Go register here</p>
                       </div>
